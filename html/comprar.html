@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--CSS-->
+    <link rel="stylesheet" href="/css/comprar.css" />
+    <link
+      rel="icon"
+      href="/imagens/icone_Formasdepagamentos.png"
+      type="imagem"
+    />
+
+    <!--JS-->
+    <script src="/js/comprar.js" defer></script>
+    <title>Comprar | Time Hours</title>
+  </head>
+  <body>
+    <section class="escolha_Produto">
+      <div class="container_Escolha">
+        <img src="/imagens/relogio1_Vender.png" class="img" />
+        <img src="/imagens/relogio2_Vender.png" class="img" />
+        <img src="/imagens/relogio3_Vender.png" class="img" />
+        <img src="/imagens/relogio4_Vender.png" class="img" />
+        <img src="/imagens/relogio5_Vender.webp" class="img" />
+        <img src="/imagens/relogio6_Vender.png" class="img" />
+        <img src="/imagens/relogio7_Vender.png" class="img" />
+        <img src="/imagens/relogio8_Vender.png" class="img" />
+        <img src="/imagens/relogio9_Vender.png" class="img" />
+      </div>
+    </section>
+
+    <section>
+      <div class="container_Tudo">
+        <img src="" class="img_Principal" />
+        <div class="container_Txt">
+          <h1 id="tituloProduto"></h1>
+          <!--DESCRIÇÃO-->
+          <p class="preço"></p>
+          <h2 class="des"></h2>
+          <h2 class="des"></h2>
+          <h2 class="des"></h2>
+          <h2 class="des"></h2>
+          <h2 class="des"></h2>
+          <h2 class="des"></h2>
+          <h2 class="des"></h2>
+          <h2 class="des"></h2>
+          <h2 class="des"></h2>
+          <!--CALCULAR FRETE-->
+          <div class="frete">
+            <h1 class="frete_Title">CALCULAR FRETE(apenas números)</h1>
+            <label>Digite o seu CEP: </label>
+            <input type="number" id="CEP" placeholder="Ex: xxxxx-xxx" />
+            <button id="Consultar" onclick="consutaEndereco()">
+              Consultar
+            </button>
+            <div id="resultado">
+              <p>Seu CEP Aqui</p>
+            </div>
+          </div>
+          <div class="last_Information">
+            <input type="radio" id="verdade" name="a" />
+            <label for="html">Correto?</label>
+          </div>
+          <button class="btn_Comprar" disabled>Confirmar?</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="pos_Compra">
+      <div class="container_PosCompra">
+        <h1>COMPRA FINALIZADA! :)</h1>
+        <p>
+          fique tranquilo!<br />Quando o pagamento for confirmado vamos te
+          enviar o codigo de rastreio pelo E-mail
+        </p>
+      </div>
+    </section>
+  </body>
+</html>

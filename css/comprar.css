@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css?family=Exo:400,700");
+@import url("https://fonts.googleapis.com/css2?family=Kanit&family=Merriweather:wght@700&family=Quicksand:wght@300&family=Roboto:ital,wght@0,100;0,300;1,300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container_Escolha {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 5vh;
+}
+
+.container_Escolha img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border: 1px solid #000000;
+}
+
+.container_Escolha img:hover {
+  background-color: rgba(128, 128, 128, 25%);
+}
+
+.container_Tudo {
+  margin-top: 10vh;
+  display: flex;
+  justify-content: space-evenly;
+  display: none;
+}
+
+.container_Txt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5vh;
+  background: linear-gradient(90deg, #1cb5e0 0%, #000851 100%);
+  width: 35vw;
+  height: 95vh;
+  border-radius: 20px;
+}
+
+.img_Principal {
+  width: 500px;
+  object-fit: cover;
+}
+
+.container_Txt h1 {
+  font-family: "Exo";
+  margin-top: 5vh;
+  color: #fff;
+  text-align: center;
+}
+
+.container_Txt .des {
+  color: #bcbcbc;
+  font-family: "Exo";
+  font-size: 1.2em;
+}
+
+.container_Txt p {
+  font-family: "Exo";
+  margin-top: 1vh;
+  color: #008000;
+  font-size: 1.2em;
+  color: #48ff00;
+  margin-bottom: 5vh;
+}
+
+.frete {
+  margin-top: 3vh;
+}
+
+.frete h1 {
+  font-size: 2em;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 2vh;
+}
+
+.frete label {
+  color: #fafafa;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.frete input {
+  padding: 10px 40px;
+  border-radius: 10px;
+  border: none;
+}
+
+.frete button {
+  padding: 15px 30px;
+  margin-left: 20px;
+  cursor: pointer;
+  border-radius: 10px;
+  border: none;
+  background-color: #02d702;
+  font-size: 1.1em;
+}
+
+.frete button:hover {
+  background-color: #2b9c2b;
+}
+
+.frete p {
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
+  font-size: 1.3em;
+}
+
+.last_Information {
+  margin-top: 1vh;
+  color: #ffff;
+  padding: 10px;
+  font-size: 1.2em;
+  display: none;
+}
+
+.btn_Comprar {
+  padding: 20px 40px;
+  border-radius: 10px;
+  border: none;
+  background-color: #00d200;
+  color: #000000;
+  font-size: 1.2em;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 2px;
+  margin-top: 10vh;
+  cursor: pointer;
+}
+
+.btn_Comprar:hover {
+  background-color: #2b9c2b;
+}
+
+.btn_Comprar:disabled {
+  color: #454545;
+  background-color: #ff4949;
+  cursor: not-allowed;
+}
+
+.container_PosCompra {
+  display: none;
+  width: 100vw;
+  height: 90vh;
+  background: linear-gradient(90deg, #1cb5e0 0%, #000851 100%);
+}
+
+.container_PosCompra h1 {
+  text-align: center;
+  font-size: 5em;
+  color: #fff;
+  letter-spacing: 2px;
+}
+
+.container_PosCompra p {
+  font-size: 2.5em;
+  text-align: center;
+  margin-bottom: 1vh;
+  color: #fff;
+  margin-top: 10vh;
+}
+
+@media (max-width: 950px) {
+  .container_Tudo {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5vh;
+  }
+  .container_Txt {
+    width: 95%;
+    height: 100%;
+  }
+  .img_Principal {
+    display: none;
+  }
+  .frete {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .frete h1 {
+    font-size: 1.8em;
+  }
+  .container_PosCompra h1 {
+    font-size: 2.5em;
+  }
+  .container_PosCompra p {
+    font-size: 1.5em;
+  }
+}

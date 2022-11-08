@@ -1,0 +1,44 @@
+        <--=--> Olá bem-vindo ao site da Time Hours. <--=--> 
+
+    //////////////////////////////////////////////////////////////////////////////////////
+
+        Eu criei esse site para o programa de estágio da eficaz, a navegação
+    nele é bem simples, eu tentei o máximo para deixar ele organizado e está responsivo apenas
+    para telas de celulares só algumas partes estão adaptadas para telas de tablets mas nem tudo.    
+        A API que eu utilizei foi: https://viacep.com.br, não sei muito bem como utilizar API então
+    eu procurei ajuda no youtube.
+        Um amigo também está fazendo o site para o programa de estágio e nos fizemos uma parceria entre o 
+    site dele( EVEREST ) e o meu site ( Time Hours ).
+
+
+    <NAVEGAÇÃO>
+
+        - No site há 5 páginas ao todo(tirando o link de contatos),podendo acessar 3 delas através da página inicial e as duas 
+        ultimas páginas através dos outros arquivos HTML.
+        
+        - Na página inicial(index.html) tem um cabeçalho mostrando a logo da empresa e os links que podem ser acessados,logo
+        em seguida abaixo do header o banner que demonstra alguns dos aspectos essenciais da loja, abaixo
+        algumas amostras de produtos com um botao caso pressionado o levará para a página de produtos(produtos.html),
+        um painel monstrando qualidades da loja apartir de textos e ícones, e a ultima coisa na página inicial é o 
+        rodapé que mostra as redes sociais da loja, as marcas que trabalham, telefones e horarios.
+
+        - Na página dos produtos(produtos.html) é mostrado os produtos que a loja vende, estando presente o titulo e o valor
+        atribuido a aquele rélogio e por ultimo o botão que quando clicado o levará para a página de compras.
+
+        - Na pagina de compras(comprar.html) na parte de cima é mostrados todos os produtos da página anterior porem agora
+        quando clicado vai aparecer o nome,descrição e frete para calcular, após verificar o cep e clicar no botão agora 
+        disabilidado você será redirecionado para a página inicial em uma nova guia, e na página vai aparecer uma tela 
+        informando que a compra foi realizado com sucesso.
+
+        - Agora na pagina de register há um simples formulário com nome,email,idade e senha entretando que ainda não está funcionando,
+        e no arquivo também há 2 icones uma casa que quando clicado sera redirecionado para a pagina de inicio e um usuario quando
+        clicado o levará para a página de login.
+
+        - Em login há 2 campos E-mail e senha que quando preenchidos será liberado o botão de acessar a conta, também nesta página 
+        tem 2 icones uma casa que o redirecionara para a pagina de inicio e outro ícone de usuario com um sinal de + nele, que o 
+        enviara para a pagina de register.
+
+        - E por último, mas não menos importante os contatos, quando passado o mouse por cima exibira uma caixa abaixo do header que 
+        mostrara números de whatsapp,emails,redes sociais da loja(todos os itens mostrados são fictionais e estão lá apenas para exibição).
+
+    </NAVEGAÇÃO>

@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css?family=Exo:400,700");
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* CABEÇALHO */
+
+.header {
+  height: 7vh;
+  width: 100%;
+  background-color: #708a81;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+}
+
+.title_Logo a {
+  font-family: "Exo", sans-serif;
+  color: #f8a231;
+  font-size: 1.5em;
+  animation: animação_Load 1s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+}
+
+.title_Logo span {
+  font-family: "Exo", sans-serif;
+  color: #fff;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+}
+
+li a {
+  color: #fff;
+  letter-spacing: 3px;
+  font-size: 1.2em;
+  font-family: "Nunito", sans-serif;
+  padding: 20px;
+  min-width: 0.5em;
+}
+
+li a:hover {
+  background-color: #636d6a;
+  transition: 0.5s;
+  color: #dadada;
+}
+
+.hamburguer {
+  display: none;
+}
+
+.Box_Contato {
+  position: absolute;
+  height: 60vh;
+  width: 20vw;
+  background-color: #c2956e;
+  top: 7vh;
+  right: 20%;
+  text-align: center;
+  border-radius: 0 0 40px 40px;
+  display: none;
+  transition: 0.5s;
+}
+
+.visivel {
+  display: block;
+  transition: 0.5s;
+}
+
+.Box_Contato h1 {
+  margin: 30px 0 10px 0;
+  color: #fff;
+  font-family: "Exo", sans-serif;
+}
+
+.Box_Contato p {
+  color: #fff;
+}
+
+@keyframes animação_Load {
+  0% {
+    letter-spacing: 1em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    letter-spacing: normal;
+    opacity: 1;
+  }
+}
+
+/* MODO RESPONSIVO */
+
+@media (max-width: 950px) {
+  .header{
+    justify-content: space-between;
+  }
+  .title_Logo {
+    font-size: 1.3em;
+    margin-left: 10vw;
+  }
+  nav {
+    display: none;
+  }
+  ul {
+    height: 80vh;
+    width: 50vw;
+    position: absolute;
+    top: 7vh;
+    left: 0;
+    background-color: #c2956e;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    -webkit-animation: scale-in-tl 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+      both;
+    animation: scale-in-tl 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  }
+  .aparecer {
+    display: block;
+  }
+  li a {
+    font-size: 1em;
+  }
+  .hamburguer {
+    display: block;
+    padding: 10px;
+    cursor: pointer;
+  }
+  .line1 {
+    width: 35px;
+    height: 4px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin-bottom: 5px;
+  }
+  .line2 {
+    width: 35px;
+    height: 4px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin-bottom: 5px;
+  }
+  .line3 {
+    width: 35px;
+    height: 4px;
+    background-color: #fff;
+    border-radius: 10px;
+  }
+  .Box_Contato {
+    position: absolute;
+    height: 60vh;
+    width: 40vw;
+    top: 7vh;
+    right: 0%;
+    transition: 0.5s;
+    text-align: center;
+    color: #fff;
+  }
+  .Box_Contato h1 {
+    font-size: 0.9em;
+  }
+  .Box_Contato p {
+    font-size: 0.7em;
+  }
+  /* Estas animações foram pegas no site https://animista.net  :D*/
+  @-webkit-keyframes scale-in-tl {
+    0% {
+      -webkit-transform: scale(0);
+      transform: scale(0);
+      -webkit-transform-origin: 0% 0%;
+      transform-origin: 0% 0%;
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+      -webkit-transform-origin: 0% 0%;
+      transform-origin: 0% 0%;
+      opacity: 1;
+    }
+  }
+
+  @keyframes scale-in-tl {
+    0% {
+      -webkit-transform: scale(0);
+      transform: scale(0);
+      -webkit-transform-origin: 0% 0%;
+      transform-origin: 0% 0%;
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+      -webkit-transform-origin: 0% 0%;
+      transform-origin: 0% 0%;
+      opacity: 1;
+    }
+  }
+}
