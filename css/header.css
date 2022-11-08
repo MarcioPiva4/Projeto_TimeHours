@@ -160,8 +160,8 @@ li a:hover {
   }
   .Box_Contato {
     position: absolute;
-    height: 60vh;
-    width: 40vw;
+    height: 80vh;
+    width: 50vw;
     top: 7vh;
     right: 0%;
     transition: 0.5s;
