@@ -7,7 +7,7 @@ let all = document.querySelector(".container_Tudo");
 let imgs = document.querySelectorAll(".img");
 
 imgs[0].addEventListener("click", () => {
-  imgP.src = `/imagens/relogio1_Vender.png`;
+  imgP.src = `./imagens/relogio1_Vender.png`;
   title.textContent = `Relógio Mondaine Prateado Feminino`;
   preço.textContent = "R$209,99";
   descriçãoProdutos[0].textContent = "Mecanismo: Analógico";
@@ -23,7 +23,7 @@ imgs[0].addEventListener("click", () => {
 });
 
 imgs[1].addEventListener("click", () => {
-  imgP.src = `/imagens/relogio2_Vender.png`;
+  imgP.src = `./imagens/relogio2_Vender.png`;
   title.textContent = `Relógio Rolex Daytona/Ouro`;
   preço.textContent = "R$150.000,99";
   descriçãoProdutos[0].textContent = "Movimento: Automatico";
@@ -39,7 +39,7 @@ imgs[1].addEventListener("click", () => {
 });
 
 imgs[2].addEventListener("click", () => {
-  imgP.src = `/imagens/relogio3_Vender.png`;
+  imgP.src = `./imagens/relogio3_Vender.png`;
   title.textContent = `Hublot Classic Fusion Titan`;
   preço.textContent = "R$29.999,99";
   descriçãoProdutos[0].textContent = "Movimento: Automatico";
@@ -55,7 +55,7 @@ imgs[2].addEventListener("click", () => {
 });
 
 imgs[3].addEventListener("click", () => {
-  imgP.src = `/imagens/relogio4_Vender.png`;
+  imgP.src = `./imagens/relogio4_Vender.png`;
   title.textContent = `Rolex Sea-Dweller 4000`;
   preço.textContent = "R$50.999,99";
   descriçãoProdutos[0].textContent = "Movimento: Automatico";
@@ -71,7 +71,7 @@ imgs[3].addEventListener("click", () => {
 });
 
 imgs[4].addEventListener("click", () => {
-  imgP.src = `/imagens/relogio5_Vender.webp`;
+  imgP.src = `./imagens/relogio5_Vender.webp`;
   title.textContent = `Rolex Submariner Date`;
   preço.textContent = "R$49.099,99";
   descriçãoProdutos[0].textContent = "Movimento: Automatico";
@@ -86,7 +86,7 @@ imgs[4].addEventListener("click", () => {
   all.style.display = "flex";
 });
 imgs[5].addEventListener("click", () => {
-  imgP.src = `/imagens/relogio6_Vender.png`;
+  imgP.src = `./imagens/relogio6_Vender.png`;
   title.textContent = `Relógio Breitling Navitimer Chronograph`;
   preço.textContent = "R$29.999,99";
   descriçãoProdutos[0].textContent = "Movimento: Automatico";
@@ -101,7 +101,7 @@ imgs[5].addEventListener("click", () => {
   all.style.display = "flex";
 });
 imgs[6].addEventListener("click", () => {
-  imgP.src = `/imagens/relogio7_Vender.png`;
+  imgP.src = `./imagens/relogio7_Vender.png`;
   title.textContent = `RELÓGIO HOMBRE`;
   preço.textContent = "R$59,99";
   descriçãoProdutos[0].textContent = "Movimento: Automatico";
@@ -116,7 +116,7 @@ imgs[6].addEventListener("click", () => {
   all.style.display = "flex";
 });
 imgs[7].addEventListener("click", () => {
-  imgP.src = `/imagens/relogio8_Vender.png`;
+  imgP.src = `./imagens/relogio8_Vender.png`;
   title.textContent = `LIGE Relógios masculinos modernos`;
   preço.textContent = "R$149,99";
   descriçãoProdutos[0].textContent = "Movimento: Quartzo suiço.";
@@ -132,7 +132,7 @@ imgs[7].addEventListener("click", () => {
   all.style.display = "flex";
 });
 imgs[8].addEventListener("click", () => {
-  imgP.src = `/imagens/relogio9_Vender.png`;
+  imgP.src = `./imagens/relogio9_Vender.png`;
   title.textContent = `Relógio De Pulso Digital`;
   preço.textContent = "R$24,99";
   descriçãoProdutos[0].textContent = "Sistema: Digital.";
@@ -161,7 +161,7 @@ inpConfirm.addEventListener("change", validar);
 btnComprar.addEventListener("click", () => {
   let posCompra = document.querySelector(".container_PosCompra");
   posCompra.style.display = "block";
-  window.open("/html/index.html");
+  window.open("index.html");
   all.style.display = "none";
   for (let i = 0; i <= 9; i++) {
     imgs[i].style.display = "none";

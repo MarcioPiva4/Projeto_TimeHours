@@ -16,7 +16,7 @@ let preço = document.querySelector(".line_Preço");
 let btn = document.querySelector(".btn_Comprar");
 
 img1.addEventListener("click", () => {
-  imgMostrar.src = "/imagens/relogio1_Vender.png";
+  imgMostrar.src = "./imagens/relogio1_Vender.png";
   title.textContent = "Relógio Mondaine Prateado";
   descriçãoLine1.textContent = "Cor: Prateado";
   descriçãoLine2.textContent = "Marca: Mondaine";
@@ -28,7 +28,7 @@ img1.addEventListener("click", () => {
 });
 
 img2.addEventListener("click", () => {
-  imgMostrar.src = "/imagens/relogio2_Vender.png";
+  imgMostrar.src = "./imagens/relogio2_Vender.png";
   title.textContent = "Relógio Rolex Daytona/Ouro";
   descriçãoLine1.textContent = "Cor: Dourado";
   descriçãoLine2.textContent = "Marca: Rolex";
@@ -40,7 +40,7 @@ img2.addEventListener("click", () => {
 });
 
 img3.addEventListener("click", () => {
-  imgMostrar.src = "/imagens/relogio3_Vender.png";
+  imgMostrar.src = "./imagens/relogio3_Vender.png";
   title.textContent = "Hublot Classic Fusion Titan";
   descriçãoLine1.textContent = "Cor: Preto/Azul";
   descriçãoLine2.textContent = "Marca: Hublot";
@@ -52,5 +52,5 @@ img3.addEventListener("click", () => {
 });
 
 btn.addEventListener("click", () => {
-  window.location.href = "/html/produtos.html";
+  window.location.href = "produtos.html";
 });
