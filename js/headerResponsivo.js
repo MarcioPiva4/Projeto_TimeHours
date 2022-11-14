@@ -3,6 +3,9 @@ let nav = document.querySelector(".nav_List");
 
 hamburguer.addEventListener("click", () => {
   nav.classList.toggle("aparecer");
+  document.querySelector(".line1").classList.toggle("line1_X")
+  document.querySelector(".line2").classList.toggle("line2_X")
+  document.querySelector(".line3").classList.toggle("line3_X")
 });
 
 //header com transparencia
