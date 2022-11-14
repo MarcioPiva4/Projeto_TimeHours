@@ -80,6 +80,10 @@ hr {
 @media (max-width: 950px) {
   /* Responsividade do rodapé */
 
+  .title_Footer{
+    text-align: center;
+  }
+
   .container_Geral,
   .container_Txt {
     flex-direction: column;
